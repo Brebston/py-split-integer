@@ -22,7 +22,7 @@ def test_parts_should_be_sorted_when_they_are_not_equal() -> None:
     value, parts = 10, 3
     result = split_integer(value, parts)
     assert len(result) == parts
-    assert sum(result) == parts
+    assert sum(result) == value
     assert result == sorted(result)
     assert max(result) - min(result) <= 1
 
